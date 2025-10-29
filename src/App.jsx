@@ -7,30 +7,31 @@ import laptop from './assets/laptop.png';
 import ComA from './Components/CompA';
 import CompB from './Components/CompB';
 import CompC from './Components/CompC';
+import Productlist from './Components/Productlist';
 const App = () => {
  let a=10;
  let arr = [1, 2, 3, 4, 5];
   let obj = { batch: "FSD-WD-B-33", mode: "Weekday", mentor: "Rupan" };
-  // let arrObj = [
-  //   {
-  //     name: "Iphone",
-  //     price: "$899",
-  //     desc: "This is Iphone 13 pro",
-  //     image: phone,
-  //   },
-  //   {
-  //     name: "Laptop",
-  //     price: "$1000",
-  //     desc: "This is Azsus Laptop",
-  //     image: lap,
-  //   },
-  //   {
-  //     name: "Tab",
-  //     price: "$499",
-  //     desc: "This is Ipad Pro",
-  //     image: tab,
-  //   }
-  // ];
+  let arrObj = [
+    {
+      name: "Iphone",
+      price: "$899",
+      desc: "This is Iphone 13 pro",
+      image: phone,
+    },
+    {
+      name: "Laptop",
+      price: "$1000",
+      desc: "This is Azsus Laptop",
+      image: laptop,
+    },
+    {
+      name: "Tab",
+      price: "$499",
+      desc: "This is Ipad Pro",
+      image: tab,
+    }
+  ];
   // const shopping = [
   //    {
   //     id:1,
@@ -66,7 +67,8 @@ const App = () => {
       <Products name="Laptop" price="$1300" disc="This is iphone pro" image={laptop}/> */}
       {/* <ComA a={a}/> */}
       {/* <CompB obj={obj} /> */}
-      <CompC arr={arr} />
+      {/* <CompC arr={arr} /> */}
+      <Productlist Arrobj={arrObj} />
     </div>
   );
 };

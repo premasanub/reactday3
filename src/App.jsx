@@ -8,6 +8,7 @@ import ComA from './Components/CompA';
 import CompB from './Components/CompB';
 import CompC from './Components/CompC';
 import Productlist from './Components/Productlist';
+import ArrayMethods from './Components/ArrayMethods';
 const App = () => {
  let a=10;
  let arr = [1, 2, 3, 4, 5];
@@ -31,6 +32,7 @@ const App = () => {
       desc: "This is Ipad Pro",
       image: tab,
     }
+     
   ];
   // const shopping = [
   //    {
@@ -68,7 +70,8 @@ const App = () => {
       {/* <ComA a={a}/> */}
       {/* <CompB obj={obj} /> */}
       {/* <CompC arr={arr} /> */}
-      <Productlist Arrobj={arrObj} />
+      {/* <Productlist Arrobj={arrObj} /> */}
+      <ArrayMethods />
     </div>
   );
 };

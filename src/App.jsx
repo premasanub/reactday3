@@ -9,6 +9,7 @@ import CompB from './Components/CompB';
 import CompC from './Components/CompC';
 import Productlist from './Components/Productlist';
 import ArrayMethods from './Components/ArrayMethods';
+import FilterReduce from './Components/FilterReduce';
 const App = () => {
  let a=10;
  let arr = [1, 2, 3, 4, 5];
@@ -34,32 +35,32 @@ const App = () => {
     }
      
   ];
-  // const shopping = [
-  //    {
-  //     id:1,
-  //     name:"Printer",
-  //     price:5000,
-  //     category:"Electronics"
-  //   },
-  //    {
-  //     id:2,
-  //     name:"Scanner",
-  //     price:5000,
-  //     category:"Electronics"
-  //   },
-  //    {
-  //     id:3,
-  //     name:"Carrot",
-  //     price:50,
-  //     category:"Grocery"
-  //   },
-  //    {
-  //     id:4,
-  //     name:"Apple",
-  //     price:250,
-  //     category:"Grocery"
-  //   },
-  // ]
+  const shopping = [
+     {
+      id:1,
+      name:"Printer",
+      price:5000,
+      category:"Electronics"
+    },
+     {
+      id:2,
+      name:"Scanner",
+      price:5000,
+      category:"Electronics"
+    },
+     {
+      id:3,
+      name:"Carrot",
+      price:50,
+      category:"Grocery"
+    },
+     {
+      id:4,
+      name:"Apple",
+      price:250,
+      category:"Grocery"
+    },
+  ]
 
   return (
     //html and css part
@@ -71,7 +72,8 @@ const App = () => {
       {/* <CompB obj={obj} /> */}
       {/* <CompC arr={arr} /> */}
       {/* <Productlist Arrobj={arrObj} /> */}
-      <ArrayMethods />
+      {/* <ArrayMethods /> */}
+      <FilterReduce shopping={shopping}/>
     </div>
   );
 };
